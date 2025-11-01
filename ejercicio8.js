@@ -1,0 +1,16 @@
+function invertirMap(map) {
+  let nuevoMap = new Map();
+  for (let [clave, valor] of map) {
+    nuevoMap.set(valor, clave);
+  }
+  return nuevoMap;
+}
+
+let capitales = new Map([
+  ["Perú", "Lima"],
+  ["Chile", "Santiago"]
+]);
+
+let invertido = invertirMap(capitales);
+console.log(invertido);
+
